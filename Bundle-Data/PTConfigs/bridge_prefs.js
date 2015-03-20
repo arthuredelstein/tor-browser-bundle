@@ -31,6 +31,6 @@ pref("extensions.torlauncher.default_bridge.obfs4.1", "obfs4 178.209.52.110:443 
 pref("extensions.torlauncher.default_bridge.obfs4.2", "obfs4 83.212.101.3:41213 A09D536DD1752D542E1FBB3C9CE4449D51298239 cert=lPRQ/MXdD1t5SRZ9MquYQNT9m5DV757jtdXdlePmRCudUU9CFUOX1Tm7/meFSyPOsud7Cw iat-mode=0");
 pref("extensions.torlauncher.default_bridge.obfs4.3", "obfs4 104.131.108.182:56880 EF577C30B9F788B0E1801CF7E433B3B77792B77A cert=0SFhfDQrKjUJP8Qq6wrwSICEPf3Vl/nJRsYxWbg3QRoSqhl2EB78MPS2lQxbXY4EW1wwXA iat-mode=0");
 
-pref("extensions.torlauncher.default_bridge.meek-google.1", "meek 0.0.2.0:1 url=https://meek-reflect.appspot.com/ front=www.google.com");
-pref("extensions.torlauncher.default_bridge.meek-amazon.1", "meek 0.0.2.0:2 url=https://d2zfqthxsdq309.cloudfront.net/ front=a0.awsstatic.com");
-pref("extensions.torlauncher.default_bridge.meek-azure.1", "meek 0.0.2.0:3 url=https://az668014.vo.msecnd.net/ front=ajax.aspnetcdn.com");
+pref("extensions.torlauncher.default_bridge.meek-google.1", "meek 0.0.2.0:1 46D4A71197B8FA515A826C6B017C522FE264655B url=https://meek-reflect.appspot.com/ front=www.google.com");
+pref("extensions.torlauncher.default_bridge.meek-amazon.1", "meek 0.0.2.0:2 4EE0CC769EB4B15A872F742EDE27D298A59DCADE url=https://d2zfqthxsdq309.cloudfront.net/ front=a0.awsstatic.com");
+pref("extensions.torlauncher.default_bridge.meek-azure.1", "meek 0.0.2.0:3 A2C13B7DFCAB1CBF3A884B6EB99A98067AB6EF44 url=https://az668014.vo.msecnd.net/ front=ajax.aspnetcdn.com");
