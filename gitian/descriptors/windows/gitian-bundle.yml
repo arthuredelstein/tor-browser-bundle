@@ -50,6 +50,7 @@ files:
 - "mar-tools-win32.zip"
 - "tbb-docs.zip"
 - "pe_checksum_fix.py"
+- "NotoEmoji-Regular.ttf"
 script: |
   INSTDIR="$HOME/install"
   source versions
@@ -133,6 +134,7 @@ script: |
   for fontfile in $NOTO_FONTS_UNHINTED; do
     cp "noto-fonts/unhinted/$fontfile" tbb-windows-installer/"Tor Browser"/Browser/fonts/
   done
+  cp NotoEmoji-Regular.ttf tbb-windows-installer/"Tor Browser"/Browser/fonts/
   #
   cd tbb-windows-installer/"Tor Browser"
   unzip ~/build/tor-browser-win32-gbuilt.zip
