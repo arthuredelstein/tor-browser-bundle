@@ -28,6 +28,8 @@ remotes:
   "dir": "meek"
 - "url": "https://github.com/googlei18n/noto-fonts.git"
   "dir": "noto-fonts"
+- "url": "https://github.com/emeryberger/DieHard"
+  "dir": "DieHard"
 files:
 - "tor-browser-linux32-gbuilt.zip"
 - "tor-browser-linux64-gbuilt.zip"
@@ -136,6 +138,19 @@ script: |
   cp "STIX/Fonts/fonts/opentype/public/stix/STIXMath-Regular.otf" ${TB_STAGE_DIR}/Browser/fonts/
   cp NotoEmoji-Regular.ttf ${TB_STAGE_DIR}/Browser/fonts/
   cp {NotoSansJP-Regular.otf,NotoSansKR-Regular.otf,NotoSansSC-Regular.otf,NotoSansTC-Regular.otf} ${TB_STAGE_DIR}/Browser/fonts/
+  #
+  if [ "$TORBROWSER_VERSION_TYPE" == "nightly" ]
+  then
+  cd DieHard/src
+    if [ $GBUILD_BITS == "64" ];
+    then
+      make linux-gcc-x86-64 TARGET=libdieharder
+    else
+      make linux-gcc-x86 TARGET=libdieharder
+    fi
+  cd ../..
+  cp DieHard/src/libdieharder.so ${TB_STAGE_DIR}/Browser/
+  fi
   #
   unzip relativelink-src.zip
   cp RelativeLink/* ${TB_STAGE_DIR}/Browser/
