@@ -300,6 +300,7 @@ depot_tools           https://chromium.googlesource.com/chromium/tools/depot_too
 go-webrtc             https://github.com/keroserene/go-webrtc $GO_WEBRTC_TAG
 snowflake             https://git.torproject.org/pluggable-transports/snowflake.git $SNOWFLAKE_TAG
 uniuri                https://github.com/dchest/uniuri $UNIURI_TAG
+DieHard               https://github.com/emeryberger/DieHard $DIEHARD_TAG
 EOF
 
 # HTTPS-Everywhere is special, too. We need to initialize the git submodules and
@@ -352,6 +353,11 @@ fi
 gclient sync --no-history --with_branch_heads -r $WEBRTC_TAG
 cd ..
 tar --exclude .git -czf webrtc.tar.gz webrtc
+
+# DieHard needs submodules loaded as well.
+cd DieHard
+git submodule update --init --recursive
+cd ..
 
 exit 0
 
