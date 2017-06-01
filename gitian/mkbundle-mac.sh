@@ -92,7 +92,7 @@ cd mac-desktop.dmg
 rm -f $GITIAN_DIR/inputs/dmg-desktop.tar.xz
 $WRAPPER_DIR/build-helpers/dtar.sh $GITIAN_DIR/inputs/dmg-desktop.tar.xz .
 cd ../mac-applications.dmg
-rm -f $GITIAN_DIR/inputs/dmg-applications.tar-gz
+rm -f $GITIAN_DIR/inputs/dmg-applications.tar.xz
 $WRAPPER_DIR/build-helpers/dtar.sh $GITIAN_DIR/inputs/dmg-applications.tar.xz .
 
 cd $WRAPPER_DIR
