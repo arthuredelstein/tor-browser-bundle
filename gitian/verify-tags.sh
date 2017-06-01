@@ -105,7 +105,6 @@ obfs4                 obfs4proxy.gpg            $OBFS4_TAG
 https-everywhere      https-everywhere.gpg      $HTTPSE_TAG
 cmake                 cmake.gpg                 $CMAKE_TAG
 sandbox               obfs4proxy.gpg            $SANDBOX_TAG
-selfrando             selfrando.gpg             $SELFRANDO_TAG
 EOF
 
 while read dir commit; do
@@ -126,6 +125,7 @@ depot_tools             $DEPOT_TOOLS_TAG
 go-webrtc               $GO_WEBRTC_TAG
 snowflake               $SNOWFLAKE_TAG
 uniuri                  $UNIURI_TAG
+selfrando               $SELFRANDO_TAG
 EOF
 
 # Verify signatures on signed packages
