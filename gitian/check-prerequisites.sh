@@ -18,7 +18,7 @@ then
   FULL_VERSION=`cat /etc/issue | grep -Eo '[0-9.]+' | head -1`
   if [ "$VERSION" -ge "14" ];
   then
-    dpkg -s ruby apache2 git apt-cacher-ng qemu-kvm virt-what lxc lxctl fakeroot faketime zip unzip subversion debian-archive-keyring curl pkg-config libgtk2.0-dev libglib2.0-dev torsocks tor 2>/dev/null >/dev/null
+    dpkg -s ruby apache2 git apt-cacher-ng qemu-kvm virt-what lxc lxctl fakeroot faketime zip unzip subversion debian-archive-keyring torsocks tor 2>/dev/null >/dev/null
 
     if [ $? -ne 0 ];
     then
@@ -26,7 +26,7 @@ then
       echo
       echo "Please run:"
       echo " sudo apt-get install torsocks tor"
-      echo " sudo torsocks apt-get install ruby apache2 git apt-cacher-ng qemu-kvm virt-what lxc lxctl fakeroot faketime zip unzip subversion debian-archive-keyring curl pkg-config libgtk2.0-dev libglib2.0-dev"
+      echo " sudo torsocks apt-get install ruby apache2 git apt-cacher-ng qemu-kvm virt-what lxc lxctl fakeroot faketime zip unzip subversion debian-archive-keyring"
       exit 1
     fi
   else
@@ -35,7 +35,7 @@ then
   fi
 elif [ $DISTRO = "Debian" ];
 then
-  dpkg -s ruby git apt-cacher-ng qemu-kvm virt-what lxc lxctl fakeroot zip unzip python-cheetah debootstrap parted kpartx rsync curl pkg-config libgtk2.0-dev libglib2.0-dev torsocks tor 2>/dev/null >/dev/null
+  dpkg -s ruby git apt-cacher-ng qemu-kvm virt-what lxc lxctl fakeroot zip unzip torsocks tor python-cheetah debootstrap parted kpartx rsync 2>/dev/null >/dev/null
 
   if [ $? -ne 0 ];
   then
@@ -43,7 +43,7 @@ then
     echo
     echo "Please run"
     echo " sudo apt-get install torsocks tor"
-    echo " sudo torsocks apt-get install ruby git apt-cacher-ng qemu-kvm virt-what lxc lxctl fakeroot zip unzip python-cheetah debootstrap parted kpartx rsync curl pkg-config libgtk2.0-dev libglib2.0-dev"
+    echo " sudo torsocks apt-get install ruby git apt-cacher-ng qemu-kvm virt-what lxc lxctl fakeroot zip unzip python-cheetah debootstrap parted kpartx rsync"
     exit 1
   fi
 else
