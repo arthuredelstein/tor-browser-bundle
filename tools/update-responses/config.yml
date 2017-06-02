@@ -20,19 +20,23 @@ build_targets:
     osx64: Darwin_x86_64-gcc3
 channels:
     alpha: 7.0a4
-    release: 6.0.1
+    release: 7.0
 versions:
-    6.0.1:
-        platformVersion: 45.2.0
-        detailsURL: https://blog.torproject.org/blog/tor-browser-601-released
+    7.0:
+        platformVersion: 52.1.2
+        detailsURL: https://blog.torproject.org/blog/tor-browser-70-released
         incremental_from:
-          - 5.5.5
-          - 6.0
+          - 6.5.2
         migrate_archs:
           osx32: osx64
+        migrate_langs:
+            pt-PT: pt-BR
+        win32:
+            minSupportedInstructionSet: SSE2
         osx32:
-            minSupportedOSVersion: 10.8
-            detailsURL: https://blog.torproject.org/blog/end-life-plan-tor-browser-32-bit-macs#updating
+            minSupportedOSVersion: 10.9
+        osx64:
+            minSupportedOSVersion: 10.9
     7.0a4:
         platformVersion: 52.1.1
         detailsURL: https://blog.torproject.org/blog/tor-browser-70a4-released
