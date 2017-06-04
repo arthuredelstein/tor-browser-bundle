@@ -1,4 +1,4 @@
-Tor Browser 7.0 -- June 6 2017
+Tor Browser 7.0 -- June 7 2017
  * All Platforms
    * Update Firefox to 52.1.2esr
    * Update Tor to 0.3.0.7
