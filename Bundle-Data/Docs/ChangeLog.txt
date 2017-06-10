@@ -6,6 +6,8 @@ Tor Browser 7.0.1 -- June 13 2017
      * Bug 22542: Security Settings window too small on macOS 10.12
    * Update HTTPS-Everywhere to 5.2.18
    * Bug 22362: NoScript's XSS filter freezes the browser
+ * OS X
+   * Bug 22558: Don't update OS X 10.7.x and 10.8.x users to Tor Browser 7.0
 
 Tor Browser 7.0 -- June 7 2017
  * All Platforms
