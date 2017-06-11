@@ -35,9 +35,9 @@ versions:
         win32:
             minSupportedInstructionSet: SSE2
         osx32:
-            minSupportedOSVersion: 10.9
+            minSupportedOSVersion: 13.0.0
         osx64:
-            minSupportedOSVersion: 10.9
+            minSupportedOSVersion: 13.0.0
     7.0a4:
         platformVersion: 52.1.1
         detailsURL: https://blog.torproject.org/blog/tor-browser-70a4-released
