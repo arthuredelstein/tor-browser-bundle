@@ -1,3 +1,8 @@
+Tor Browser 7.0.2 -- July 3 2017
+ * All Platforms
+   * Update Tor to 0.3.0.9, fixing bug #22753
+   * Update HTTPS-Everywhere to 5.2.19
+
 Tor Browser 7.0.1 -- June 13 2017
  * All Platforms
    * Update Firefox to 52.2.0esr
