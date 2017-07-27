@@ -1,3 +1,7 @@
+Tor Browser 7.0.3 -- July 27 2017
+ * Linux
+   * Bug 23044: Don't allow GIO supported protocols by default
+
 Tor Browser 7.0.2 -- July 3 2017
  * All Platforms
    * Update Tor to 0.3.0.9, fixing bug #22753
