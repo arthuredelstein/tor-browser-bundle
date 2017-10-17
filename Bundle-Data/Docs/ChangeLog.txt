@@ -19,6 +19,7 @@ Tor Browser 7.0.7 -- October 19 2017
    * Bug 22472: Fix FTP downloads when external helper app dialog is shown
    * Bug 22471: Downloading pdf files via the PDF viewer download button is broken
    * Bug 22618: Downloading pdf file via file:/// is stalling
+   * Bug 23694: Update the detailsURL in update responses
  * OS X
    * Bug 23807: Tab crashes when playing video on High Sierra
 
