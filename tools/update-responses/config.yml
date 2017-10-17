@@ -24,7 +24,7 @@ channels:
 versions:
     7.0.7:
         platformVersion: 52.4.1
-        detailsURL: https://blog.torproject.org/blog/tor-browser-707-released
+        detailsURL: https://blog.torproject.org/tor-browser-707-released
         incremental_from:
           - 7.0.6
         migrate_archs:
