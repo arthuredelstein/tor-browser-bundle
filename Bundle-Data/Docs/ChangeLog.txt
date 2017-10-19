@@ -22,6 +22,8 @@ Tor Browser 7.0.7 -- October 19 2017
    * Bug 23694: Update the detailsURL in update responses
  * OS X
    * Bug 23807: Tab crashes when playing video on High Sierra
+ * Linux
+   * Bug 22692: Enable content sandboxing on Linux
 
 Tor Browser 7.0.6 -- September 26 2017
  * All Platforms
