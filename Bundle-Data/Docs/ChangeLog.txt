@@ -1,3 +1,10 @@
+Tor Browser 7.0.8 -- October 25 2017
+ * All Platforms
+   * Update Torbutton to 1.9.7.9
+     * Bug 23949: Fix donation banner display
+     * Update locales with translated banner
+     * Translations update
+
 Tor Browser 7.0.7 -- October 19 2017
  * All Platforms
    * Update Firefox to 52.4.1esr
