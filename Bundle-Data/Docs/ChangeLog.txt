@@ -1,3 +1,9 @@
+Tor Browser 7.0.9 -- October 31 2017
+ * OS X
+   * Bug 24052: Streamline handling of file:// resources
+ * Linux
+   * Bug 24052: Streamline handling of file:// resources
+
 Tor Browser 7.0.8 -- October 25 2017
  * All Platforms
    * Update Torbutton to 1.9.7.9
