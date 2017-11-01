@@ -1,4 +1,4 @@
-Tor Browser 7.0.9 -- October 31 2017
+Tor Browser 7.0.9 -- November 3 2017
  * OS X
    * Bug 24052: Streamline handling of file:// resources
  * Linux
