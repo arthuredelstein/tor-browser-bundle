@@ -25,7 +25,6 @@ files:
 - "fix-info-plist.py"
 - "versions"
 - "24052.patch"
-- "24052_2.patch"
 script: |
   INSTDIR="$HOME/install/"
   source versions
@@ -39,7 +38,6 @@ script: |
 
   cd tor-browser
   patch -p1 < ../24052.patch
-  patch -p1 < ../24052_2.patch
   # Extracting all the necessary tools
   tar xaf ../MacOSX10.7.sdk.tar.gz
   tar xaf ../cctools.tar.gz
