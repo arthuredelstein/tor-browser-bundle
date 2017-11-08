@@ -20,14 +20,14 @@ build_targets:
     osx64: Darwin_x86_64-gcc3
 channels:
     alpha: 7.0a4
-    release: 7.0.9
+    release: 7.0.10
 versions:
-    7.0.9:
-        platformVersion: 52.4.1
-        detailsURL: https://blog.torproject.org/tor-browser-709-released
+    7.0.10:
+        platformVersion: 52.5.0
+        detailsURL: https://blog.torproject.org/tor-browser-7010-released
         incremental_from:
-          - 7.0.7
           - 7.0.8
+          - 7.0.9
         migrate_archs:
           osx32: osx64
         migrate_langs:
