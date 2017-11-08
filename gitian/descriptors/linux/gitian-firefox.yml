@@ -36,7 +36,6 @@ files:
 - "re-dzip.sh"
 - "dzip.sh"
 - "versions"
-- "24052.patch"
 script: |
   source versions
   INSTDIR="$HOME/install"
@@ -89,7 +88,6 @@ script: |
   mkdir -p $INSTDIR/Debug/Browser/
 
   cd tor-browser
-  patch -p1 < ../24052.patch
   # run get-moz-build-date before removing .git, which is used to get the year
   chmod +x ~/build/get-moz-build-date
   eval $(~/build/get-moz-build-date $(cat browser/config/version.txt))
