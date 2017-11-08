@@ -107,7 +107,7 @@ script: |
   # |./makexpi.sh foo| to build tag |foo| is a) trying to download the sources
   # during build time (again) and b) broken due to a certificate error.
   rm -f .git/refs/heads/master
-  ./makexpi.sh
+  ./make.sh
   # Since 5.0.2 a .xpi for AMO is built, too. We don't need it.
   rm pkg/*-amo.xpi
   cp pkg/*.xpi ../${TB_STAGE_DIR}/Browser/TorBrowser/Data/Browser/profile.default/extensions/https-everywhere-eff@eff.org.xpi
