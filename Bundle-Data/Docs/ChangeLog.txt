@@ -6,6 +6,7 @@ Tor Browser 7.0.10 -- November 14 2017
      * Bug 23997: Add link to Tor Browser manual for de, nl, tr, vi
      * Translations update
    * Update HTTPS-Everywhere to 2017.10.30
+     * Bug 24178: Use make.sh for building HTTPS-Everywhere
    * Update NoScript to 5.1.5
      * Bug 23968: NoScript icon jumps to the right after update
  * Windows
