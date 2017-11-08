@@ -132,14 +132,14 @@ do
   fi
 done
 
-for i in OSXSDK MSVCR100
+for i in OSXSDK
 do
   PACKAGE="${i}_PACKAGE"
   URL="${MIRROR_URL}${!PACKAGE}"
   get "${!PACKAGE}" "${MIRROR_URL}${!PACKAGE}"
 done
 
-for i in CCTOOLS
+for i in CCTOOLS MSVCR100
 do
   PACKAGE="${i}_PACKAGE"
   URL="${MIRROR_URL_GK}${!PACKAGE}"
